@@ -1,0 +1,34 @@
+.container{
+   width: 100%;
+   margin: auto;
+}
+/* for sm dives */
+@media only screen and (max-width: 640px){
+   .container{
+      max-width: 640px;
+   }
+}
+/* for md dives */
+@media only screen and (max-width: 768px){
+   .container{
+      max-width: 768px
+   }
+}
+/* for lg dives */
+@media only screen and (max-width: 1024px){
+   .container{
+      max-width: 1024px;
+   }
+}
+/* for xl dives */
+@media only screen and (max-width: 1280px){
+   .container{
+      max-width: 1280px;
+   }
+}
+/* for xl dives */
+@media only screen and (max-width: 1536px){
+   .container{
+      max-width: 1536px;
+   }
+}
