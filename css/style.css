@@ -31,12 +31,14 @@ h1,
 h2,
 h3,
 p {
-   padding: 0;
-   margin: 0;
+   padding: 0px;
+   margin: 0px;
 }
 
-ul li {
+ul {
    list-style: none;
+   padding: 0px;
+   margin: 0px;
 }
 
 /* --------------------------___________________________------------------------------ */
@@ -46,7 +48,11 @@ ul li {
    align-items: center;
    align-content: center;
    border-bottom: 2px solid #e1e1e1;
-   padding: 0rem .5rem;
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   background-color: var(--white);
+   padding: .5rem 1rem;
 }
 
 .navbar .logo a {
@@ -103,7 +109,7 @@ ul li {
 /*-----------------___________________----------- hero------------_______________------------  */
 #hero {
    width: 98.7vw;
-   height: 91vh;
+   height: 99.9vh;
    background-color: var(--lightWhite);
 }
 
@@ -181,10 +187,49 @@ ul li {
 }
 
 /* ----------------_______________------------features__________---------------- */
-#features{
-   
+#features .features_content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-items: flex-end;
+   padding: 0rem 3rem;
+   padding-top: 6rem;
+}
+#features .features_content p{
+   font-size: 1.1rem;
+   padding: 1rem 0rem;
+}
+#features .features_content span{
+   font-size:1.3rem ;
+}
+#features .features_content h1{
+   font-size: 3rem;
 }
 
+#features .features_content ul li{
+   font-size: 1.1rem;
+}
+#features .features_content ul li i{
+   padding: 4px;
+   font-size: 1rem;
+   background-color:#d2e6de;
+   color: var(--main);
+   margin-right: 1rem;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+#features .features_content .features_app img {
+   height: 450px;
+   width: 230px;
+
+}
+/* ________--------------------all_info____________-------------------- */
+#all_info .container{
+   padding: 0rem 1rem;
+}
 /* for sm dives */
 @media only screen and (max-width: 640px) {
    .container {
