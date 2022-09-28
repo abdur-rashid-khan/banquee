@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Banquee</title>
 </head>
+<!-- fontawesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<script src="https://kit.fontawesome.com/21001ec282.js" crossorigin="anonymous"></script>
+<!-- style sheet -->
+<link rel="stylesheet" href="./css/style.css">
+
 <body>
    <!-- navbar -->
    <nav>
       <div class="container">
-         
+         <div class="navbar">
+            <div class="logo">
+               <a href="/home">banquee</a>
+            </div>
+            <div class="menu_item">
+               <ul>
+                  <li><a href="/">Features</a></li>
+                  <li><a href="/">Compare <i class="fa-solid fa-angle-down"></i></a></li>
+                  <li><a href="/">Support</a></li>
+                  <li><a href="/">Blog</a></li>
+               </ul>
+            </div>
+            <div class="account">
+               <div class="login">
+                  <a href="/login">login</a>
+               </div>
+               <div class="signIn">
+                  <a href="/signin">Open Account</a>
+               </div>
+            </div>
+         </div>
       </div>
    </nav>
+   <!-- hero section -->
+   <main>
+      <div id="hero">
+         <div class="container">
+            <div class="banner">
+               <div class="banner_text">
+                  <h1>All in one card</h1>
+                  <p>Senectus et netus et malesuada fames ac turpis. <br> Sagittis vitae et leo duis ut diam.</p>
+               </div>
+               <div class="button_group">
+                  <button>Open Account </button>
+                  <a href="#">Compare Cards <span><i class="fa-solid fa-arrow-right"></i></span></a>
+               </div>
+            </div>
+            <div id="banner_cards">
+               <div class="sm_card">
+                  <img id="card_img" src="./img/card/card.png" alt="">
+               </div>
+
+               <div class="md_card">
+                  <img id="card_img" src="./img/card/card1.png" alt="">
+               </div>
+
+               <div class="lg_card">
+                  <img id="card_img" src="./img/card/card2.png" alt="">
+               </div>
+
+               <div class="md_card">
+                  <img id="card_img" src="./img/card/card3.png" alt="">
+               </div>
+               <div class="md_card">
+                  <img id="card_img" src="./img/card/card5.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- features -->
+   <section id="features">
+      <div class="container">
+         <div class="features_content">
+            <div class="">
+               <p>Transactions</p>
+               <h1>Send & receive money instantly</h1>
+               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                  enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                  <u>
+                     <li><span><i class="fa-solid fa-check"></i></span>Malesuada Ipsum</li>
+                     <li><span><i class="fa-solid fa-check"></i></span>Vestibulum</li>
+                     <li><span><i class="fa-solid fa-check"></i></span>Parturient Lorem</li>
+                  </u>
+            </div>
+            <div class="">
+               <img src="./img/app/app.png" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
 </body>
+
 </html>

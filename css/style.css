@@ -1,34 +1,221 @@
-.container{
-   width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata&display=swap');
+
+:root {
+   --main: #5bb5a2;
+   --primary: #f1dfdf;
+   --white: #e8f2ee;
+   --deepWhite: #dfe1f1;
+   --lightWhite: #dfeaf1;
+   --black: #0f0e0ed8;
+}
+
+body {
+   padding: 0px;
+   margin: 0px;
+   font-family: 'DM Sans', sans-serif;
+   /* font-family: 'DM Sans', sans-serif;
+font-family: 'Inconsolata', monospace; */
+}
+
+.container {
    margin: auto;
 }
+
+a {
+   text-decoration: none;
+   color: var(--black);
+   font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+   padding: 0;
+   margin: 0;
+}
+
+ul li {
+   list-style: none;
+}
+
+/* --------------------------___________________________------------------------------ */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+   border-bottom: 2px solid #e1e1e1;
+   padding: 0rem .5rem;
+}
+
+.navbar .logo a {
+   color: var(--main);
+   font-size: 2rem;
+}
+
+.navbar .menu_item ul li {
+   display: inline-block;
+   padding: 10px;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   transition: all .8s ease-in-out;
+   -webkit-transition: all .8s ease-in-out;
+   -moz-transition: all .8s ease-in-out;
+   -ms-transition: all .8s ease-in-out;
+   -o-transition: all .8s ease-in-out;
+}
+
+.navbar .menu_item ul li:hover {
+   background-color: var(--main);
+   cursor: pointer;
+}
+
+.navbar .menu_item ul li:hover a {
+   color: var(--black);
+}
+
+.navbar .account {
+   display: flex;
+   gap: 20px;
+}
+
+.navbar .account .login a {
+   color: var(--main);
+   font-size: 1rem;
+}
+
+.navbar .account .signIn a {
+   color: var(--white);
+   background: var(--main);
+   padding: 10px 20px;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   font-size: 1rem;
+}
+
+/*-----------------___________________----------- hero------------_______________------------  */
+#hero {
+   width: 98.7vw;
+   height: 91vh;
+   background-color: var(--lightWhite);
+}
+
+#hero .banner {
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+#hero #banner_cards {
+   position: absolute;
+   bottom: 0%;
+}
+
+#hero .banner .banner_text {
+   text-align: center;
+}
+
+#hero .banner .banner_text h1 {
+   font-size: 5rem;
+}
+
+#hero .banner .banner_text p {
+   font-size: 1.2rem;
+   margin: 20px 0px;
+}
+
+#hero .banner .button_group {
+   text-align: center;
+}
+
+#hero .banner .button_group button {
+   font-size: 1.2rem;
+   padding: 12px 20px;
+   border: none;
+   background-color: var(--main);
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   color: var(--white);
+   transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+
+#hero .banner .button_group button:hover {
+   background-color: #1b7460d2;
+}
+
+#hero .banner .button_group a {
+   margin-left: 2rem;
+   color: var(--main);
+}
+
+/* banner card  */
+#banner_cards {
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(5, 1fr);
+   align-items: end;
+}
+
+#card_img {
+   width: 100%;
+   height: auto;
+}
+
+/* ----------------_______________------------features__________---------------- */
+#features{
+   
+}
+
 /* for sm dives */
-@media only screen and (max-width: 640px){
-   .container{
+@media only screen and (max-width: 640px) {
+   .container {
       max-width: 640px;
    }
 }
+
 /* for md dives */
-@media only screen and (max-width: 768px){
-   .container{
+@media only screen and (min-width: 768px) {
+   .container {
       max-width: 768px
    }
 }
+
 /* for lg dives */
-@media only screen and (max-width: 1024px){
-   .container{
+@media only screen and (min-width: 1024px) {
+   .container {
       max-width: 1024px;
    }
 }
+
 /* for xl dives */
-@media only screen and (max-width: 1280px){
-   .container{
+@media only screen and (min-width: 1280px) {
+   .container {
       max-width: 1280px;
    }
 }
+
 /* for xl dives */
-@media only screen and (max-width: 1536px){
-   .container{
+@media only screen and (min-width: 1536px) {
+   .container {
       max-width: 1536px;
    }
 }
