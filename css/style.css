@@ -7,7 +7,7 @@
    --deepWhite: #dfe1f1;
    --lightWhite: #dfeaf1;
    --smText: #979799;
-   --black: #0f0e0ed8;
+   --black: #1A191E;
 }
 
 body {
@@ -31,7 +31,7 @@ a {
 h1,
 h2,
 h3,
-p {
+p{
    padding: 0px;
    margin: 0px;
 }
@@ -324,12 +324,11 @@ ul {
    margin-top: 4.5rem;
 }
 #card_info h1{
-font-family: 'DM Sans';
-/* font-style: normal; */
-/* font-weight: 500; */
-font-size: 2.5rem;
-line-height: 120%;
-letter-spacing: -0.03em;
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 2.5rem;
+   line-height: 120%;
 }
 #card_info p{
    color: var(--smText);
@@ -338,10 +337,37 @@ letter-spacing: -0.03em;
 #card_info .all_brand_logo .brand_logo{
    display: flex;
    align-items: center;
-   gap: 20px;
+   justify-content: start;
+   /* gap: 10px; */
 }
-
-
+#card_info .all_brand_logo .brand_logo img{
+   width: 100%;
+   height: auto;
+}
+#card_info .saving_account{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: start;
+   margin-top: 2rem;
+}
+#card_info .saving_account img{
+   width: 125px;
+   height: 125px;
+}
+/* online payment transaction */
+#transaction{
+   margin-top:2rem ;
+}
+#transaction .tr_content{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   padding: .5rem 0rem;
+}
+#transaction .tr_content p{
+   padding: 0px;
+}
 
 
 
