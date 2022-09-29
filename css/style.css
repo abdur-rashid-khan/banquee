@@ -359,6 +359,7 @@ ul {
 #card_info p {
    color: var(--smText);
    padding: 8px 0px;
+   font-size: 1.2rem;
 }
 
 #card_info .all_brand_logo .brand_logo {
@@ -484,10 +485,10 @@ ul {
 }
 
 #choose_card #card .card_content p {
-   font-family: 'Inter';
+   /* font-family: 'Inter'; */
    font-style: normal;
    font-weight: 500;
-   font-size: 1.1rem;
+   font-size: 1.2rem;
    line-height: 160%;
    text-align: center;
    color: var(--smText);
@@ -703,6 +704,7 @@ ul {
    right: 0%;
    top: 0%;
    bottom: 0%;
+   font-size: 1.2rem;
 }
 
 #corsArrow {
@@ -711,6 +713,7 @@ ul {
    top: 0%;
    bottom: 0%;
    display: none;
+   font-size: 1.2rem;
 }
 
 .accordion-text li.showAnswer .question-arrow #corsArrow {
@@ -895,7 +898,7 @@ ul {
 /* for sm dives */
 @media only screen and (max-width: 640px) {
    html {
-      font-size: 60%;
+      font-size: 70%;
    }
 
    .container {
@@ -944,6 +947,7 @@ ul {
       align-items: end;
       margin-top: 8rem;
       text-align: center;
+      gap: 3rem;
    }
 
    #card_info {
