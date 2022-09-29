@@ -510,7 +510,7 @@ ul {
    width: 100%;
    background: var(--main);
    padding: .8rem;
-   color: var(--lightWhite);
+   color: #fff;
    font-size: 1rem;
    border-radius: 3px;
    -webkit-border-radius: 3px;
