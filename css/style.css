@@ -495,9 +495,10 @@ ul {
 }
 
 /* faq */
-#faq{
+#faq {
    margin: 10rem 0rem;
 }
+
 #faq #faq_content {
    display: flex;
    justify-content: space-around;
@@ -564,9 +565,6 @@ ul {
    color: var(--main);
 }
 
-
-
-
 /* accordion */
 
 /* .accordion {
@@ -584,10 +582,6 @@ ul {
    height: 600px;
    width: 500px;
 } */
-
-
-
-
 .accordion .accordion-text .title {
    font-size: 35px;
    font-weight: 600;
@@ -604,6 +598,7 @@ ul {
    list-style: none;
    cursor: pointer;
 }
+
 .accordion-text li .question-arrow {
    display: flex;
    align-items: center;
@@ -680,6 +675,7 @@ ul {
    bottom: 0%;
    display: none;
 }
+
 .accordion-text li.showAnswer .question-arrow #corsArrow {
    display: block;
 }
@@ -688,19 +684,104 @@ ul {
    display: none;
 }
 
+/* footer */
+#footer{
+   padding: 4rem 0rem;
+   border-top: 2px solid var(--deepWhite);
+}
+#footer .container{
+   padding: 0rem 1rem;
+}
+#footer .footer_content {
+   display: flex;
+}
 
+#footer .footer_content .logo {
+   width: 20%;
+}
 
+#footer .footer_content .footer_link {
+   width: 80%;
+}
 
+/*  */
+#footer .footer_content .footer_link {
+   display: flex;
+   justify-content: space-around;
+}
 
+#footer .footer_end {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
+#footer .footer_content .logo h1 {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2.5rem;
+   line-height: 100%;
+   letter-spacing: -0.03em;
+   color: var(--main);
+}
+#footer .footer_content .footer_link {
+   margin-top: 1rem;
+}
+#footer .footer_content .footer_link h1 {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 1.3rem;
+   line-height: 140%;
+   letter-spacing: -0.03em;
+   color: var(--black);
+}
 
+#footer .footer_content .footer_link ul li a {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 160%;
+   color: var(--smText);
+   transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
 
+#footer .footer_content .footer_link ul {
+   padding-top: 1.5rem;
+}
 
+#footer .footer_content .footer_link ul li {
+   padding: .1rem 0rem;
+}
 
+#footer .footer_content .footer_link ul li:hover a {
+   color: var(--main);
+}
 
+#footer .footer_end {
+   margin-top: 5rem;
+}
 
+#footer .footer_end strong {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1rem;
+   line-height: 160%;
+   color: #828283;
+}
 
-
+#footer .footer_end span {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1rem;
+   line-height: 160%;
+   color: #828283;
+}
 
 
 
