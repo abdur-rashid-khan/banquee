@@ -39,7 +39,16 @@
                   <a href="/signin">Open Account</a>
                </div>
                <div id="mobile_menu">
-                  <i class="fa-solid fa-bars"></i>
+                  <i id="menu_btn" onclick="menuBtn()" class="fa-solid fa-bars"></i>
+                  <i id="menu_cancel_btn" onclick="closeBtn()" style="display: none;" class="fa-solid fa-xmark"></i>
+                  <div id="mobile_menu_content">
+                     <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Compare</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Blog</a></li>
+                     </ul>
+                  </div>
                </div>
             </div>
          </div>
